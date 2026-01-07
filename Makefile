@@ -19,7 +19,7 @@ define KernelPackage/r8126
   SUBMENU:=Network Devices
   DEPENDS:=@PCI_SUPPORT +kmod-libphy
   FILES:= $(PKG_BUILD_DIR)/r8126.ko
-  PROVIDES:=kmod-r8169
+  PROVIDES:=@kmod-r8169-any
   AUTOLOAD:=$(call AutoProbe,r8126)
 endef
 
